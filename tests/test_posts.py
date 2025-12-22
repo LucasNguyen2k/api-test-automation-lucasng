@@ -1,4 +1,4 @@
-from src.client import get_post
+from client import get_post
 
 def test_get_post_success(valid_post_response):
     response = valid_post_response

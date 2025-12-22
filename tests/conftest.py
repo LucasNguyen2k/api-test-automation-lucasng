@@ -1,5 +1,5 @@
 import pytest
-from src.client import get_post
+from client import get_post
 
 @pytest.fixture
 def valid_post_response():
