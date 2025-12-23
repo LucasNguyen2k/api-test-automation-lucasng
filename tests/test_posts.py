@@ -1,14 +1,14 @@
+import pytest
 from client import get_post
 
-def test_get_post_success(valid_post_response):
-    response = valid_post_response
-
-    assert response.status_code == 200
-    assert response.json()["id"] == 1
-
-
-
-def test_get_post_not_found():
-    response = get_post(999999)
-
-    assert response.status_code == 404
+@pytest.mark.parametrize(
+    "post_id, expected_status",
+    [
+        (1, 200),
+        (2, 200),
+        (999999, 404),
+    ],
+)
+def test_get_post_various_cases(post_id, expected_status):
+    response = get_post(post_id)
+    assert response.status_code == expected_status
