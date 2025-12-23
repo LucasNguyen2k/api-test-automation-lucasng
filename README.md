@@ -1,4 +1,4 @@
-![CI](https://github.com/LucasNguyen2k/api-test-automation/actions/workflows/python-ci.yml/badge.svg)
+![CI](https://github.com/LucasNguyen2k/api-test-automation-lucasng/actions/workflows/python-ci.yml/badge.svg)
 
 # API Test Automation (Python + PyTest)
 
@@ -54,6 +54,8 @@ GET /posts/{id}
 ```bash
 pip install pytest requests
 
-
+### 2️⃣ Run tests
+```bash
+py -m pytest
 
 
