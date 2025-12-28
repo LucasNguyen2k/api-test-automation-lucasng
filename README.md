@@ -53,9 +53,10 @@ GET /posts/{id}
 ### 1️⃣ Install dependencies
 ```bash
 pip install pytest requests
+```
 
 ### 2️⃣ Run tests
 ```bash
 py -m pytest
-
+```
 
